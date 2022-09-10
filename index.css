@@ -6,17 +6,18 @@ body {
 }
 
 .container{
-    padding: 20px 12px;
+    padding: 30px 42px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 12px 0px 0px 14px;
+    margin: 22px 0px 0px 35px;
 }
 
 
 .heading{
     margin: 10px 0px 0px 0px;
     padding-bottom: 25px; 
+    font-size: 35px;
 }
 
 .heading-part1{
@@ -30,7 +31,7 @@ body {
 
 .supporting-text{
     color: #D5D4D8;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 28px;
     margin-top: -18px;
     font-weight: 400;
@@ -42,6 +43,7 @@ body {
 .passwordSetting{
     color: #D5D4D8;
     margin: 5px 0px;
+    font-size: 25px;
 }
 
 #passwordLength{
@@ -59,7 +61,7 @@ body {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 24px;
     color: white;
     background: #10B981;
@@ -88,7 +90,7 @@ body {
     padding: 5px 8px; 
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
-    font-size: 16px;  
+    font-size: 24px;  
     margin: 0px 20px 20px 0px; 
     background: #273549;
     border-radius: 6px;
