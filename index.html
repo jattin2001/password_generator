@@ -25,10 +25,14 @@
             <button onclick="generatePassword()" id="pass-btn">Generate passwords</button>
             </div>
             <div class="password-boxes">
-                <input onclick="copyPass1()" id="password-el1" class="pbox">
-                <input onclick="copyPass2()" id="password-el2" class="pbox">  
+                <div onclick="copyDivToClipboard('password-el1')" id="password-el1" class="pbox"></div>
+                <div onclick="copyDivToClipboard('password-el2')" id="password-el2" class="pbox"></div> 
             </div>         
         </div>
+
+        <footer>
+            <p>© 2022–2023 JK (Jattin Khajuria), Inc.  All rights reserved.</p>
+        </footer>
         <script src="index.js"></script>
     </body>
 </html>

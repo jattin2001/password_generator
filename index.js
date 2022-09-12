@@ -18,6 +18,7 @@ passwordLengthEl.addEventListener("input", function () {
 
 });
 
+
 function lengthCheck() {
   if (passwordLength > 32 || passwordLength < 6) {
       passwordLengthEl.value = 8
@@ -27,24 +28,25 @@ function lengthCheck() {
 };
 
 
-function copyPass1() {
-  passwordEl1.select();
-  document.execCommand('copy')
-  alert("Copied the text: " + passwordEl1.value);
+function copyDivToClipboard(passwordId) {
+  var range = document.createRange();
+  range.selectNode(document.getElementById(passwordId));
+  window.getSelection().removeAllRanges(); // clear current selection
+  window.getSelection().addRange(range); // to select text
+  document.execCommand("copy");
+  alert("Copied the text: " + document.getElementById(passwordId).textContent);
+  window.getSelection().removeAllRanges();// to deselect
 }
 
-function copyPass2() {
-  passwordEl2.select();
-  document.execCommand('copy')
-  alert("Copied the text: " + passwordEl2.value);
-}
+
+
 
 
 function generatePassword() {
   let passwordArray1 = [];
   let passwordArray2 = [];
-  passwordEl1.value = "";
-  passwordEl2.value = "";
+  passwordEl1.textContent = "";
+  passwordEl2.textContent = "";
 
   for (let i = 0; i < passwordLength; i++) {
     if (numbersEl.checked === false && symbolEl.checked === true) {
@@ -68,7 +70,7 @@ function generatePassword() {
       passwordArray1.push(mixedArray[randomNum1]);
       passwordArray2.push(mixedArray[randomNum2]);
     }
-    passwordEl1.value += passwordArray1[i];
-    passwordEl2.value += passwordArray2[i];
+    passwordEl1.textContent += passwordArray1[i];
+    passwordEl2.textContent += passwordArray2[i];
   }
 }
