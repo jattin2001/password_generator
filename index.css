@@ -6,9 +6,8 @@ body {
 }
 
 .container{
-    height: 90%;
     width: 85vw;
-    padding-left: 12px;;
+    padding: 40px 12px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -20,7 +19,6 @@ body {
 
 .heading{
     font-size: 2rem;
-    padding-top: 10px;
 }
 
 .heading-part1{
@@ -61,8 +59,6 @@ body {
 
 
 #pass-btn{
-    /* width: 200px; */
-    /* height: 40px; */
     border: none;
     font-size: 1.2rem;
     font-family: 'Inter';
